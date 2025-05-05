@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Services | Rotra Horizon B.V.</title>
+    <meta name="description" content="Efficient and reliable transport solutions from Rotra Horizon B.V. for seamless movement of liquid products through our integrated logistics network.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Mouse Follower -->
+    <div class="mouse-follower"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Rotra Horizon <span>B.V.</span></h1>
+                    </a>
+                </div>
+                
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="about.html">About</a></li>
+                        <li class="nav-item"><a href="responsibility.html">Responsibility</a></li>
+                        <li class="nav-item"><a href="terminal-port.html">Terminal & Port</a></li>
+                        <li class="nav-item dropdown active">
+                            <a href="services.html">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="services-cleaning.html">Cleaning</a></li>
+                                <li><a href="services-transport.html" class="active">Transport</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="sustainability.html">Sustainability</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1 class="animate-text">Transport Services</h1>
+            <div class="breadcrumbs animate-text">
+                <a href="index.html">Home</a> / <a href="services.html">Services</a> / <span>Transport</span>
+            </div>
+        </div>
+        <div class="banner-bg" style="background-image: url('https://source.unsplash.com/random/1920x500/?transport,tanker,truck')"></div>
+    </section>
+    
+    <!-- Transport Overview -->
+    <section class="transport-overview section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2 class="section-title">Integrated Transport Solutions</h2>
+                <p class="section-subtitle">Connecting your products to global markets</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-left reveal-left">
+                    <p>Rotra Horizon B.V. offers comprehensive transport solutions that seamlessly integrate with our storage services, providing end-to-end logistics support for your liquid product supply chain. Our multimodal transport network ensures reliable, efficient, and safe movement of your products to and from our terminals.</p>
+                    <p>With a modern fleet, experienced professionals, and advanced tracking systems, we deliver transportation services that meet the highest standards of reliability, safety, and efficiency. Whether you need road transport, barge services, or intermodal solutions, our team can develop a customized transport plan that aligns with your specific requirements.</p>
+                    <p>Our transport operations are guided by our commitment to safety, sustainability, and customer satisfaction, with a focus on optimizing routes, minimizing emissions, and ensuring timely deliveries.</p>
+                </div>
+                <div class="col-right reveal-right">
+                    <div class="image-container">
+                        <img src="https://source.unsplash.com/random/600x400/?transport,tanker,logistics" alt="Transport Services">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Transport Modes -->
+    <section class="transport-modes section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2 class="section-title">Our Transport Modes</h2>
+                <p class="section-subtitle">Multimodal solutions for efficient product movement</p>
+            </div>
+            
+            <div class="modes-tabs">
+                <div class="tabs-navigation">
+                    <button class="tab-btn active" data-tab="road">Road Transport</button>
+                    <button class="tab-btn" data-tab="barge">Barge Transport</button>
+                    <button class="tab-btn" data-tab="rail">Rail Transport</button>
+                    <button class="tab-btn" data-tab="intermodal">Intermodal Solutions</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="road">
+                        <div class="row">
+                            <div class="col-left reveal-left">
+                                <h3>Road Transport Services</h3>
+                                <p>Our modern fleet of specialized tanker trucks provides flexible and reliable road transport for a wide range of liquid products. With extensive coverage across Europe, we offer efficient door-to-door deliveries with precise scheduling and real-time tracking.</p>
+                                <ul class="feature-list">
+                                    <li>Fleet of ADR-compliant tanker trucks</li>
+                                    <li>Various tank types for different product requirements</li>
+                                    <li>Temperature-controlled transport options</li>
+                                    <li>GPS tracking and monitoring systems</li>
+                                    <li>Experienced drivers with specialized training</li>
+                                    <li>Flexible scheduling to meet your timing needs</li>
+                                    <li>Cross-border transport capabilities</li>
+                                </ul>
+                            </div>
+                            <div class="col-right reveal-right">
+                                <div class="image-container">
+                                    <img src="https://source.unsplash.com/random/600x400/?truck,tanker,road" alt="Road Transport">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="barge">
+                        <div class="row">
+                            <div class="col-left reveal-left">
+                                <h3>Barge Transport Services</h3>
+                                <p>For efficient and environmentally friendly bulk transport, our barge services provide cost-effective movement of large volumes along Europe's extensive inland waterway network. With direct access from our terminals to major waterways, we offer seamless barge transport solutions.</p>
+                                <ul class="feature-list">
+                                    <li>Access to an extensive network of inland barges</li>
+                                    <li>Various capacities to suit different volume requirements</li>
+                                    <li>Lower environmental impact compared to road transport</li>
+                                    <li>Cost-effective for large volume shipments</li>
+                                    <li>Specialized equipment for diverse liquid products</li>
+                                    <li>Scheduled services on major European waterways</li>
+                                    <li>Integrated terminal-to-terminal solutions</li>
+                                </ul>
+                            </div>
+                            <div class="col-right reveal-right">
+                                <div class="image-container">
+                                    <img src="https://source.unsplash.com/random/600x400/?barge,river,transport" alt="Barge Transport">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="rail">
+                        <div class="row">
+                            <div class="col-left reveal-left">
+                                <h3>Rail Transport Services</h3>
+                                <p>Our rail transport solutions offer efficient movement of larger volumes over long distances. With direct rail connections at our terminals and partnerships with major rail operators, we provide reliable and sustainable rail transport options for your products.</p>
+                                <ul class="feature-list">
+                                    <li>Access to tank car fleets across Europe</li>
+                                    <li>Direct rail connections from our terminals</li>
+                                    <li>Reduced carbon footprint for long-distance transport</li>
+                                    <li>Efficient for large volume, long-distance shipments</li>
+                                    <li>Various tank car types for different products</li>
+                                    <li>Integration with major European rail networks</li>
+                                    <li>Track and trace capabilities</li>
+                                </ul>
+                            </div>
+                            <div class="col-right reveal-right">
+                                <div class="image-container">
+                                    <img src="https://source.unsplash.com/random/600x400/?rail,train,transport" alt="Rail Transport">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="intermodal">
+                        <div class="row">
+                            <div class="col-left reveal-left">
+                                <h3>Intermodal Transport Solutions</h3>
+                                <p>Our integrated intermodal solutions combine the advantages of different transport modes, optimizing your supply chain for efficiency, cost-effectiveness, and environmental performance. We coordinate seamless transfers between transport modes, providing end-to-end logistics support.</p>
+                                <ul class="feature-list">
+                                    <li>Coordinated combinations of road, rail, and barge transport</li>
+                                    <li>Optimized routing based on cost, time, and environmental factors</li>
+                                    <li>Seamless transfers at intermodal terminals</li>
+                                    <li>Single point of contact for entire transport chain</li>
+                                    <li>Reduced carbon footprint through modal optimization</li>
+                                    <li>Comprehensive tracking across all transport modes</li>
+                                    <li>Flexible contingency planning</li>
+                                </ul>
+                            </div>
+                            <div class="col-right reveal-right">
+                                <div class="image-container">
+                                    <img src="https://source.unsplash.com/random/600x400/?intermodal,logistics,transport" alt="Intermodal Transport">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Fleet & Equipment -->
+    <section class="fleet-equipment section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2 class="section-title">Our Fleet & Equipment</h2>
+                <p class="section-subtitle">Modern assets for safe and efficient transport</p>
+            </div>
+            
+            <div class="fleet-slider">
+                <div class="fleet-slide active">
+                    <div class="row">
+                        <div class="col-left reveal-left">
+                            <h3>Road Tanker Fleet</h3>
+                            <p>Our road transport fleet consists of modern tanker trucks specifically designed for the safe and efficient transport of various liquid products. All vehicles meet the latest safety and emissions standards, with specialized equipment for different product types.</p>
+                            <ul class="feature-list">
+                                <li>Various tank capacities from 20,000 to 40,000 liters</li>
+                                <li>Stainless steel and aluminum tank options</li>
+                                <li>Multi-compartment configurations available</li>
+                                <li>Temperature control capabilities</li>
+                                <li>Advanced safety features and monitoring systems</li>
+                                <li>Euro 6 compliance for reduced emissions</li>
+                            </ul>
+                        </div>
+                        <div class="col-right reveal-right">
+                            <div class="image-container">
+                                <img src="https://source.unsplash.com/random/600x400/?tanker,truck,fleet" alt="Road Tanker Fleet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fleet-slide">
+                    <div class="row">
+                        <div class="col-left reveal-left">
+                            <h3>Barge Equipment</h3>
+                            <p>Through our extensive network of partners, we have access to a wide range of specialized barges for inland waterway transport. These vessels offer efficient bulk transport with lower environmental impact compared to road transport for long distances.</p>
+                            <ul class="feature-list">
+                                <li>Capacities ranging from 500 to 3,000 tons</li>
+                                <li>Double-hull designs for enhanced safety</li>
+                                <li>Specialized equipment for various liquid products</li>
+                                <li>Heating capabilities for temperature-sensitive products</li>
+                                <li>Modern navigation and monitoring systems</li>
+                                <li>Compliance with all safety and environmental regulations</li>
+                            </ul>
+                        </div>
+                        <div class="col-right reveal-right">
+                            <div class="image-container">
+                                <img src="https://source.unsplash.com/random/600x400/?barge,vessel,waterway" alt="Barge Equipment">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fleet-slide">
+                    <div class="row">
+                        <div class="col-left reveal-left">
+                            <h3>Rail Tank Cars</h3>
+                            <p>Our rail transport solutions utilize modern tank cars designed for the safe transport of liquid products over long distances. Through partnerships with major rail operators, we provide access to various types of tank cars suited to different products and volumes.</p>
+                            <ul class="feature-list">
+                                <li>Various capacities to meet different volume requirements</li>
+                                <li>Specialized tank designs for different product types</li>
+                                <li>Insulated and heated tank cars available</li>
+                                <li>Safety features exceeding regulatory requirements</li>
+                                <li>Regular maintenance and inspection programs</li>
+                                <li>Tracking and monitoring capabilities</li>
+                            </ul>
+                        </div>
+                        <div class="col-right reveal-right">
+                            <div class="image-container">
+                                <img src="https://source.unsplash.com/random/600x400/?rail,tank,car" alt="Rail Tank Cars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Transport Management -->
+    <section class="transport-management section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-left reveal-left">
+                    <h2 class="section-title">Advanced Transport Management</h2>
+                    <p>At Rotra Horizon, we utilize sophisticated transport management systems to ensure efficient planning, execution, and monitoring of all transport operations. Our digital platform provides real-time visibility, optimized routing, and comprehensive documentation management.</p>
+                    <h3>Key Features:</h3>
+                    <ul class="custom-list">
+                        <li>Real-time tracking and monitoring of shipments</li>
+                        <li>Optimized route planning and scheduling</li>
+                        <li>Automated documentation and reporting</li>
+                        <li>Performance analytics and KPI monitoring</li>
+                        <li>Digital proof of delivery</li>
+                        <li>Customer portal for shipment visibility</li>
+                    </ul>
+                    <p>Through our transport management platform, we can provide you with complete visibility of your product movements, enabling better planning, reduced transit times, and enhanced supply chain efficiency.</p>
+                </div>
+                <div class="col-right reveal-right">
+                    <div class="image-container">
+                        <img src="https://source.unsplash.com/random/600x400/?digital,logistics,management" alt="Transport Management Systems">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Safety & Compliance -->
+    <section class="safety-compliance section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2 class="section-title">Safety & Regulatory Compliance</h2>
+                <p class="section-subtitle">Prioritizing safe and compliant transport operations</p>
+            </div>
+            
+            <div class="compliance-grid">
+                <div class="compliance-box reveal-up" data-delay="0.1">
+                    <div class="compliance-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safety Standards</h3>
+                    <p>Our transport operations adhere to the highest safety standards, with comprehensive protocols for loading, transport, and unloading activities.</p>
+                </div>
+                
+                <div class="compliance-box reveal-up" data-delay="0.2">
+                    <div class="compliance-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Regulatory Compliance</h3>
+                    <p>We ensure full compliance with all applicable transport regulations, including ADR for road, ADN for inland waterways, and RID for rail transport.</p>
+                </div>
+                
+                <div class="compliance-box reveal-up" data-delay="0.3">
+                    <div class="compliance-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Driver Training</h3>
+                    <p>Our drivers undergo extensive training in safe handling of dangerous goods, defensive driving, and emergency response procedures.</p>
+                </div>
+                
+                <div class="compliance-box reveal-up" data-delay="0.4">
+                    <div class="compliance-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Regular Inspections</h3>
+                    <p>All transport equipment undergoes rigorous inspections and preventative maintenance to ensure operational safety and reliability.</p>
+                </div>
+                
+                <div class="compliance-box reveal-up" data-delay="0.5">
+                    <div class="compliance-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health & Safety</h3>
+                    <p>We maintain comprehensive health and safety programs for all personnel involved in transport operations, fostering a strong safety culture.</p>
+                </div>
+                
+                <div class="compliance-box reveal-up" data-delay="0.6">
+                    <div class="compliance-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Emergency Response</h3>
+                    <p>Our detailed emergency response plans and trained response teams ensure rapid and effective action in the event of an incident.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sustainable Transport -->
+    <section class="sustainable-transport section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-left reveal-left">
+                    <div class="image-container">
+                        <img src="https://source.unsplash.com/random/600x400/?sustainable,transport,green" alt="Sustainable Transport Solutions">
+                    </div>
+                </div>
+                <div class="col-right reveal-right">
+                    <h2 class="section-title">Sustainable Transport Solutions</h2>
+                    <p>At Rotra Horizon, we are committed to reducing the environmental impact of our transport operations. Through innovative solutions and strategic planning, we help our clients achieve more sustainable supply chains while maintaining efficiency and reliability.</p>
+                    <h3>Our Sustainable Transport Initiatives:</h3>
+                    <ul class="custom-list">
+                        <li>Modern, fuel-efficient vehicles with reduced emissions</li>
+                        <li>Modal shift to lower-impact transport modes where feasible</li>
+                        <li>Optimized route planning to minimize fuel consumption</li>
+                        <li>Driver training in eco-driving techniques</li>
+                        <li>Alternative fuel trials and adoption where viable</li>
+                        <li>Carbon footprint measurement and reduction strategies</li>
+                        <li>Collaboration with industry partners on sustainability innovations</li>
+                    </ul>
+                    <p>We work closely with our clients to identify opportunities for enhancing the sustainability of their transport operations while meeting their business requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Integrated Solutions -->
+    <section class="integrated-solutions section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h2 class="section-title">Integrated Logistics Solutions</h2>
+                <p class="section-subtitle">Combining storage and transport for seamless operations</p>
+            </div>
+            
+            <div class="solutions-container">
+                <div class="solution-box reveal-up" data-delay="0.1">
+                    <div class="solution-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>End-to-End Supply Chain</h3>
+                    <p>Our integrated approach combines storage and transport services in a seamless solution, optimizing your entire supply chain from source to destination.</p>
+                </div>
+                
+                <div class="solution-box reveal-up" data-delay="0.2">
+                    <div class="solution-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Flexibility & Adaptability</h3>
+                    <p>Our combined services offer the flexibility to adapt to changing market conditions, seasonal variations, and evolving business requirements.</p>
+                </div>
+                
+                <div class="solution-box reveal-up" data-delay="0.3">
+                    <div class="solution-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Efficiency Improvements</h3>
+                    <p>By integrating storage and transport, we eliminate redundancies, reduce handling, and streamline operations for enhanced efficiency and cost savings.</p>
+                </div>
+                
+                <div class="solution-box reveal-up" data-delay="0.4">
+                    <div class="solution-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Single Point of Contact</h3>
+                    <p>Enjoy the simplicity of working with a single provider for all your storage and logistics needs, with dedicated account management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta section-padding bg-light">
+        <div class="container">
+            <div class="cta-wrapper reveal-up">
+                <h2>Optimize Your Transport Operations</h2>
+                <p>Contact our expert team today to discuss your specific transport requirements.</p>
+                <a href="contact.html" class="btn btn-large">Request a Quote</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h3>Rotra Horizon <span>B.V.</span></h3>
+                    </div>
+                    <p>Professional tank storage solutions with a focus on safety, efficiency, and sustainability.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="terminal-port.html">Terminal & Port</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Tank Storage</a></li>
+                        <li><a href="services-cleaning.html">Cleaning Services</a></li>
+                        <li><a href="services-transport.html">Transport</a></li>
+                        <li><a href="terminal-port.html">Terminal Operations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Information</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Harbor District 123, 3001 Rotterdam, Netherlands</li>
+                        <li><i class="fas fa-phone"></i> +31 10 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@rotrahorizon.com</li>
+                        <li><i class="fas fa-clock"></i> Monday - Friday: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Rotra Horizon B.V. All Rights Reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

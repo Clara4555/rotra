@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotra Horizon B.V. | Professional Tank Storage Solutions</title>
+    <meta name="description" content="Rotra Horizon B.V. offers comprehensive tank storage solutions with a focus on sustainability and efficiency.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Mouse Follower -->
+    <div class="mouse-follower"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Rotra Horizon <span>B.V.</span></h1>
+                    </a>
+                </div>
+                
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item active"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="about.html">About</a></li>
+                        <li class="nav-item"><a href="responsibility.html">Responsibility</a></li>
+                        <li class="nav-item"><a href="terminal-port.html">Terminal & Port</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="services.html">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="services-cleaning.html">Cleaning</a></li>
+                                <li><a href="services-transport.html">Transport</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="sustainability.html">Sustainability</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h2 class="animate-text">Leading Tank Storage Solutions</h2>
+                    <p class="animate-text">Efficient, reliable, and sustainable storage for your products</p>
+                    <a href="contact.html" class="btn animate-text">Get in Touch</a>
+                </div>
+                <div class="slide-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080/?oil,tank,storage')"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2 class="animate-text">Global Logistics Excellence</h2>
+                    <p class="animate-text">Strategic terminal locations and advanced infrastructure</p>
+                    <a href="services.html" class="btn animate-text">Our Services</a>
+                </div>
+                <div class="slide-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080/?port,terminal')"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2 class="animate-text">Committed to Sustainability</h2>
+                    <p class="animate-text">Environmental responsibility at the core of our operations</p>
+                    <a href="sustainability.html" class="btn animate-text">Learn More</a>
+                </div>
+                <div class="slide-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080/?sustainable,energy')"></div>
+            </div>
+        </div>
+        
+        <div class="slider-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+    
+    <!-- About Section Preview -->
+    <section class="about-preview section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-left reveal-left">
+                    <h2 class="section-title">About Rotra Horizon</h2>
+                    <p>Rotra Horizon B.V. is a leading tank storage company committed to providing high-quality storage solutions for various liquid products. With decades of experience, we have established ourselves as a reliable partner for businesses worldwide.</p>
+                    <p>Our state-of-the-art facilities and strategic locations enable us to deliver efficient and cost-effective services to our clients, meeting their unique storage needs.</p>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="col-right reveal-right">
+                    <div class="image-container">
+                        <img src="https://source.unsplash.com/random/600x400/?industrial,storage" alt="Rotra Horizon Facilities">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Preview -->
+    <section class="services-preview section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title text-center reveal-up">Our Services</h2>
+            <p class="section-subtitle text-center reveal-up">Comprehensive tank storage solutions for your business</p>
+            
+            <div class="services-cards">
+                <div class="service-card reveal-up" data-delay="0.1">
+                    <div class="icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3>Storage Solutions</h3>
+                    <p>State-of-the-art tank storage facilities designed for various liquid products with optimal safety standards.</p>
+                </div>
+                
+                <div class="service-card reveal-up" data-delay="0.2">
+                    <div class="icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>Terminal Operations</h3>
+                    <p>Efficient loading and unloading services at strategic port locations with excellent connectivity.</p>
+                </div>
+                
+                <div class="service-card reveal-up" data-delay="0.3">
+                    <div class="icon">
+                        <i class="fas fa-soap"></i>
+                    </div>
+                    <h3>Cleaning Services</h3>
+                    <p>Professional tank cleaning solutions ensuring the highest standards of cleanliness and safety.</p>
+                </div>
+                
+                <div class="service-card reveal-up" data-delay="0.4">
+                    <div class="icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Transport</h3>
+                    <p>Reliable transportation services to complement our storage solutions with timely delivery.</p>
+                </div>
+            </div>
+            
+            <div class="cta-center reveal-up">
+                <a href="services.html" class="btn">View All Services</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Key Features -->
+    <section class="key-features section-padding">
+        <div class="container">
+            <h2 class="section-title text-center reveal-up">Why Choose Rotra Horizon</h2>
+            
+            <div class="features-container">
+                <div class="feature-box reveal-left">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Safety First</h3>
+                        <p>Industry-leading safety protocols and regular audits to ensure the highest level of protection.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box reveal-left" data-delay="0.2">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Environmentally Conscious</h3>
+                        <p>Sustainable practices and eco-friendly solutions minimizing our environmental footprint.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box reveal-right" data-delay="0.4">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Advanced Technology</h3>
+                        <p>Cutting-edge equipment and monitoring systems for optimal storage conditions and efficiency.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box reveal-right" data-delay="0.6">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Expert Team</h3>
+                        <p>Highly trained professionals dedicated to providing exceptional service and support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonials section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title text-center reveal-up">What Our Clients Say</h2>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        <div class="quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Rotra Horizon has been our trusted partner for over 5 years. Their reliability and professional approach have made them an integral part of our supply chain."</p>
+                        <div class="client-info">
+                            <h4>European Energy Corporation</h4>
+                            <span>Strategic Partner</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The level of service and flexibility Rotra Horizon provides is unmatched in the industry. Their commitment to safety and environmental standards aligns perfectly with our corporate values."</p>
+                        <div class="client-info">
+                            <h4>Global Chemical Solutions</h4>
+                            <span>Long-term Client</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The strategic location of Rotra Horizon's terminals combined with their efficient operations has significantly improved our logistics performance."</p>
+                        <div class="client-info">
+                            <h4>International Logistics Group</h4>
+                            <span>Industry Partner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-controls">
+                <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="t-dot active" data-testimonial="0"></span>
+                    <span class="t-dot" data-testimonial="1"></span>
+                    <span class="t-dot" data-testimonial="2"></span>
+                </div>
+                <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta section-padding">
+        <div class="container">
+            <div class="cta-wrapper reveal-up">
+                <h2>Ready to Optimize Your Storage Solutions?</h2>
+                <p>Contact our expert team today to discuss how Rotra Horizon can meet your tank storage needs.</p>
+                <a href="contact.html" class="btn btn-large">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h3>Rotra Horizon <span>B.V.</span></h3>
+                    </div>
+                    <p>Professional tank storage solutions with a focus on safety, efficiency, and sustainability.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="terminal-port.html">Terminal & Port</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Tank Storage</a></li>
+                        <li><a href="services-cleaning.html">Cleaning Services</a></li>
+                        <li><a href="services-transport.html">Transport</a></li>
+                        <li><a href="terminal-port.html">Terminal Operations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Information</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Harbor District 123, 3001 Rotterdam, Netherlands</li>
+                        <li><i class="fas fa-phone"></i> +31 10 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@rotrahorizon.com</li>
+                        <li><i class="fas fa-clock"></i> Monday - Friday: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Rotra Horizon B.V. All Rights Reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
