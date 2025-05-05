@@ -178,6 +178,10 @@
         overflow-y: auto;
         transform: translateY(-100%);
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
     .navigation.active {
@@ -187,6 +191,9 @@
     .nav-list {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     
     .nav-item {
@@ -194,6 +201,7 @@
         padding: 10px 0;
         width: 80%;
         border-bottom: 1px solid var(--light-gray);
+        text-align: center;
     }
     
     .dropdown-menu {
@@ -209,6 +217,7 @@
         display: none;
         padding: 10px 0;
         text-align: center;
+        margin: 0 auto;
     }
     
     .dropdown:hover .dropdown-menu {
@@ -221,10 +230,13 @@
     
     .dropdown-menu li {
         text-align: center;
+        width: 100%;
     }
     
     .dropdown-menu a {
         display: inline-block;
+        width: auto;
+        margin: 0 auto;
     }
     
     .hamburger-menu {
