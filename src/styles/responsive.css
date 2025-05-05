@@ -187,16 +187,13 @@
     .nav-list {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        height: 80%;
     }
     
     .nav-item {
         margin: 0;
-        padding: 15px 0;
-        border-bottom: 1px solid var(--light-gray);
+        padding: 10px 0;
         width: 80%;
-        text-align: center;
+        border-bottom: 1px solid var(--light-gray);
     }
     
     .dropdown-menu {
@@ -210,7 +207,7 @@
         visibility: visible;
         transform: none;
         display: none;
-        padding: 15px 0 0 0;
+        padding: 10px 0;
         text-align: center;
     }
     
@@ -220,6 +217,14 @@
     
     .dropdown-menu.show {
         display: block;
+    }
+    
+    .dropdown-menu li {
+        text-align: center;
+    }
+    
+    .dropdown-menu a {
+        display: inline-block;
     }
     
     .hamburger-menu {
