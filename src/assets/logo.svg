@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tank container silhouette -->
+  <rect x="30" y="20" width="40" height="30" rx="2" fill="#0a4e80" />
+  
+  <!-- Horizon line -->
+  <line x1="10" y1="40" x2="190" y2="40" stroke="#1f7cbe" stroke-width="3" />
+  
+  <!-- Letter R stylized -->
+  <path d="M110,15 L110,45 L120,45 C125,45 130,42 130,37 C130,32 125,30 122,30 L130,15 L120,15 L113,30 L115,30 Z" fill="#0a4e80" />
+  
+  <!-- Circular elements suggesting tanks -->
+  <circle cx="150" cy="30" r="15" fill="none" stroke="#0a4e80" stroke-width="3" />
+  <circle cx="170" cy="30" r="8" fill="#1f7cbe" />
+  
+  <!-- Reflection effect on tank -->
+  <rect x="35" y="25" width="30" height="5" rx="2" fill="#1f7cbe" opacity="0.7" />
+</svg>

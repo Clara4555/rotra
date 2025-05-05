@@ -16,47 +16,50 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Route for about page
+// Routes for pages in the src/pages directory
 app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, 'about.html'));
+  res.sendFile(path.join(__dirname, 'src/pages/about.html'));
 });
 
-// Route for services page
 app.get('/services', (req, res) => {
-  res.sendFile(path.join(__dirname, 'services.html'));
+  res.sendFile(path.join(__dirname, 'src/pages/services.html'));
 });
 
-// Route for services-cleaning page
 app.get('/services-cleaning', (req, res) => {
-  res.sendFile(path.join(__dirname, 'services-cleaning.html'));
+  res.sendFile(path.join(__dirname, 'src/pages/services-cleaning.html'));
 });
 
-// Route for services-transport page
 app.get('/services-transport', (req, res) => {
-  res.sendFile(path.join(__dirname, 'services-transport.html'));
+  res.sendFile(path.join(__dirname, 'src/pages/services-transport.html'));
 });
 
-// Route for terminal-port page
 app.get('/terminal-port', (req, res) => {
-  res.sendFile(path.join(__dirname, 'terminal-port.html'));
+  res.sendFile(path.join(__dirname, 'src/pages/terminal-port.html'));
 });
 
-// Route for sustainability page
 app.get('/sustainability', (req, res) => {
-  res.sendFile(path.join(__dirname, 'sustainability.html'));
+  res.sendFile(path.join(__dirname, 'src/pages/sustainability.html'));
 });
 
-// Route for responsibility page
 app.get('/responsibility', (req, res) => {
-  res.sendFile(path.join(__dirname, 'responsibility.html'));
+  // For backward compatibility (this file may still be in the root)
+  const responsibilityPath = path.join(__dirname, 'src/pages/responsibility.html');
+  const rootPath = path.join(__dirname, 'responsibility.html');
+  
+  // Try the new path first, fallback to the root path
+  res.sendFile(responsibilityPath, (err) => {
+    if (err) {
+      res.sendFile(rootPath);
+    }
+  });
 });
 
-// Route for contact page
 app.get('/contact', (req, res) => {
-  res.sendFile(path.join(__dirname, 'contact.html'));
+  res.sendFile(path.join(__dirname, 'src/pages/contact.html'));
 });
 
 // Start the server
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Rotra Horizon B.V. Website Server running at http://0.0.0.0:${PORT}/`);
+  console.log(`Using new file structure with src/pages/ directory`);
 });

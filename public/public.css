@@ -1,0 +1,10 @@
+/*
+* Rotra Horizon B.V. - Public Stylesheet
+* Author: Developer
+* Version: 1.0
+*/
+
+/* Import the CSS from the original style file */
+@import url('../css/style.css');
+
+/* Add any additional public-specific styles here */
