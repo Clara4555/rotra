@@ -279,6 +279,10 @@ img {
     transition: transform 0.3s ease;
 }
 
+.logo-a img{
+    height: 5px !important;
+}
+
 .logo:hover .logo-img {
     transform: scale(1.05);
 }
