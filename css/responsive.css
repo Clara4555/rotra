@@ -194,14 +194,19 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .nav-item {
-        margin: 0;
+        margin: 0 auto;
         padding: 10px 0;
         width: 80%;
         border-bottom: 1px solid var(--light-gray);
         text-align: center;
+        display: flex;
+        justify-content: center;
     }
     
     .dropdown-menu {
@@ -231,12 +236,16 @@
     .dropdown-menu li {
         text-align: center;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
     }
     
     .dropdown-menu a {
         display: inline-block;
         width: auto;
         margin: 0 auto;
+        text-align: center;
     }
     
     .hamburger-menu {
